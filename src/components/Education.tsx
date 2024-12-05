@@ -1,7 +1,7 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase, faGraduationCap, faSchool, faUserGraduate } from '@fortawesome/free-solid-svg-icons';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss'
@@ -16,26 +16,26 @@ function Education() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="July 2024 - Nov 2024"
+            date="Oct 2024 - Aug 2026"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
+            icon={<FontAwesomeIcon icon={faGraduationCap} />}
           >
             <h3 className="vertical-timeline-element-title">Distributed Systems Engineering</h3>
             <h4 className="vertical-timeline-element-subtitle">Technische Universität Dresden</h4>
             <p>
-              Full-stack Web Development, Database Development, GenAI/LLM, Caching, DevOps, Python
+              Transaction Systems, Distributed Systems, System Design, Confidential Computing 
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="June 2024 - July 2024"
+            date="Sept 2020 - June 2024"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
+            icon={<FontAwesomeIcon icon={faGraduationCap} />}
           >
             <h3 className="vertical-timeline-element-title">Software Engineering</h3>
             <h4 className="vertical-timeline-element-subtitle">FAST NUCES</h4>
             <p>
-              C# / C++ Desktop Development, Object Oriented Programming, Multi-Threading, Asio.io 
+              Object Oriented Programming, Database Systems, Web Engineering, Applied DevOps 
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
