@@ -63,6 +63,15 @@
     padding-bottom: 30%;
 }
 
+#intro_headline{
+    display: none;
+}
+
+#intro_description{
+    font-size: 1.2rem;
+}
+
+
 @media screen {
     @media (max-width: 567px) {
         .nav-left{
@@ -101,11 +110,16 @@
             padding-right: 5%;
             font-size: 12px;
         }
+
+        #intro_name{
+            font-size: 3rem !important;
+        }
+
     }
 
     @media (max-width:768px) {
         .about-section h1 {
-            font-size: 4em !important;
+            font-size: 4em;
             text-align: left;
         }
 
@@ -151,5 +165,24 @@
             padding-left: 5%;
             width: 100%;
         }
+
+        #intro_name{
+            font-size: 4rem;
+        }
+
+        #intro_headline{
+            display: block;
+        }
+
+        #intro_description{
+            display: none;
+        }
+    }
+
+    @media (max-width: 1192px){
+        .about-section h1 {
+            font-size: 3.5em;
+            text-align: left;
+        } 
     }
 }
