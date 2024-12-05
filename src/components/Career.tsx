@@ -6,9 +6,9 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss'
 
-function Timeline() {
+function Career() {
   return (
-    <div id="history">
+    <div id="career">
       <div className="items-container">
         <h1>Career History</h1>
         <VerticalTimeline>
@@ -16,50 +16,38 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
+            date="July 2024 - Nov 2024"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+            <h3 className="vertical-timeline-element-title">Software Engineer</h3>
+            <h4 className="vertical-timeline-element-subtitle">GoodCore</h4>
             <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
+              Full-stack Web Development, Database Development, GenAI/LLM, Caching, DevOps, Python
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2022"
+            date="June 2024 - July 2024"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Junior Software Engineer</h3>
+            <h4 className="vertical-timeline-element-subtitle">Trafix</h4>
             <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
+              C# / C++ Desktop Development, Object Oriented Programming, Multi-Threading, Asio.io 
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2021 - 2021"
+            date="June 2023 - Sep 2023"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Software Engineer Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">One Technology Services</h4>
             <p>
-              Full-stack Development, API Development, User Experience
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020 - 2020"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
-            <p>
-              Automation, Data Governance, Statistical Analysis
+              Front-end Development, User Experience, Typescript, Angular 
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
@@ -68,4 +56,4 @@ function Timeline() {
   );
 }
 
-export default Timeline;
+export default Career;

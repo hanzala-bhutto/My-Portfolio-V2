@@ -2,26 +2,27 @@ import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import '../assets/styles/Main.scss';
+import profile from '../assets/images/profile_photo/photo.png';
 
 function Main() {
 
   return (
-    <div className="container">
+    <div id="about">
       <div className="about-section">
         <div className="image-wrapper">
-          <img src="https://my-aws-assets.s3.us-west-2.amazonaws.com/portfolio-img/avatar_circle.jpeg" alt="Avatar" />
+          <img src={profile} alt="Avatar" />
         </div>
         <div className="content">
           <div className="social_icons">
-            <a href="https://github.com/yujisatojr" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://www.linkedin.com/in/yujisato/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+            <a href="https://github.com/hanzala-bhutto" target="_blank" rel="noreferrer"><GitHubIcon/></a>
+            <a href="https://www.linkedin.com/in/hanzala-bhutto-a10936234/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
-          <h1>Yuji Sato</h1>
-          <p>Full Stack Engineer</p>
-
+          <h1 id="intro_name">Hanzala Bhutto</h1>
+          <p id="intro_headline">Software Engineer</p>
+          <p id="intro_description">I’m a software engineer pursuing a Master’s in Distributed Systems Engineering at TU Dresden. With expertise in Frontend, Backend, Generative AI, DevOps, and distributed systems, I thrive on creating innovative solutions and tackling complex challenges in dynamic environments.</p>
           <div className="mobile_social_icons">
-            <a href="https://github.com/yujisatojr" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://www.linkedin.com/in/yujisato/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+            <a href="https://github.com/hanzala-bhutto" target="_blank" rel="noreferrer"><GitHubIcon/></a>
+            <a href="https://www.linkedin.com/in/hanzala-bhutto-a10936234/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
         </div>
       </div>
