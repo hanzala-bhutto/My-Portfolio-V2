@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/My-Portfolio-V2/static/css/main.4359e071.css",
-    "main.js": "/My-Portfolio-V2/static/js/main.8db8ac8d.js",
+    "main.css": "/My-Portfolio-V2/static/css/main.66cae05a.css",
+    "main.js": "/My-Portfolio-V2/static/js/main.d596bd1d.js",
     "static/js/453.b05d8aa5.chunk.js": "/My-Portfolio-V2/static/js/453.b05d8aa5.chunk.js",
     "static/media/mock10.png": "/My-Portfolio-V2/static/media/mock10.2d05b02ba569a430a255.png",
     "static/media/bg-light.png": "/My-Portfolio-V2/static/media/bg-light.bac0efb485244a522981.png",
-    "static/media/mock06.png": "/My-Portfolio-V2/static/media/mock06.ea816617e0d0fa0f63ca.png",
     "static/media/bg-dark.png": "/My-Portfolio-V2/static/media/bg-dark.f420c6b8458af72de935.png",
+    "static/media/travfood.png": "/My-Portfolio-V2/static/media/travfood.0cc9117ef5b4e9c22691.png",
+    "static/media/Hanzala_CV_Software_Engineer.pdf": "/My-Portfolio-V2/static/media/Hanzala_CV_Software_Engineer.be1870bb3f82b04e2f2d.pdf",
     "static/media/photo.png": "/My-Portfolio-V2/static/media/photo.bf13a5babca8495afa74.png",
     "static/media/chat_to_your_database.png": "/My-Portfolio-V2/static/media/chat_to_your_database.8f7d3b54f5e5a62086f0.png",
     "static/media/multi_disease.png": "/My-Portfolio-V2/static/media/multi_disease.f69a410460c042447bf8.png",
     "static/media/proctowise.png": "/My-Portfolio-V2/static/media/proctowise.bbe50d19b17019fcf9fb.png",
     "index.html": "/My-Portfolio-V2/index.html",
-    "main.4359e071.css.map": "/My-Portfolio-V2/static/css/main.4359e071.css.map",
-    "main.8db8ac8d.js.map": "/My-Portfolio-V2/static/js/main.8db8ac8d.js.map",
+    "main.66cae05a.css.map": "/My-Portfolio-V2/static/css/main.66cae05a.css.map",
+    "main.d596bd1d.js.map": "/My-Portfolio-V2/static/js/main.d596bd1d.js.map",
     "453.b05d8aa5.chunk.js.map": "/My-Portfolio-V2/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4359e071.css",
-    "static/js/main.8db8ac8d.js"
+    "static/css/main.66cae05a.css",
+    "static/js/main.d596bd1d.js"
   ]
 }
