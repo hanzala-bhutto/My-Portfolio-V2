@@ -50,6 +50,18 @@ function Career() {
               Front-end Development, User Experience, Typescript, Angular 
             </p>
           </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="Sept 2022 - June 2023"
+            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">University Teaching Assistant</h3>
+            <h4 className="vertical-timeline-element-subtitle">FAST NUCES</h4>
+            <p>
+              Assistant for Programming Fundamentals & Object Oriented Programming Courses.
+            </p>
+          </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
     </div>
