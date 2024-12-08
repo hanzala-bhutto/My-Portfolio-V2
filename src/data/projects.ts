@@ -4,6 +4,7 @@ import mock10 from '../assets/images/mock10.png';
 import multi_disease from '../assets/images/project_photos/multi_disease.png';
 import chat_to_your_database from '../assets/images/project_photos/chat_to_your_database.png';
 import proctowise from '../assets/images/project_photos/proctowise.png';
+import travfood from '../assets/images/project_photos/travfood.png';
 
 export const projects = [
     {
@@ -37,7 +38,7 @@ export const projects = [
     {
         title: "TravFood",
         description: "Developed a React Native mobile app that helps users discover travel destinations and local food spots, offering a seamless browsing experience for travel and dining.",
-        image: mock06,
+        image: travfood,
         github: "https://github.com/hanzala-bhutto/PMD-React-Native-Travel-Food-App",
         website: "",
     },
