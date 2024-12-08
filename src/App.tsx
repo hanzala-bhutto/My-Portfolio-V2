@@ -5,7 +5,7 @@ import {
   Project,
   Career, 
   Education,
-  Contact,
+//   Contact,
   Navigation,
   Footer,
 } from "./components";
@@ -36,7 +36,7 @@ function App() {
             <Education/>
             <Expertise/>
             <Project/>
-            <Contact/>
+            {/* <Contact/> */}
         </FadeIn>
         <Footer />
     </div>
