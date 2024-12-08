@@ -15,9 +15,9 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
+import { navItems } from "../data";
 
 const drawerWidth = 240;
-const navItems = [['About', 'about'], ['Career', 'career'], ['Education', 'education'],['Expertise', 'expertise'], ['Projects', 'projects'], ['Contact', 'contact']];
 
 function Navigation({parentToChild, modeChange}: any) {
 
@@ -62,7 +62,7 @@ function Navigation({parentToChild, modeChange}: any) {
       <p className="mobile-menu-top"><ListIcon/>Menu</p>
       <Divider />
       <List>
-        {navItems.map((item) => (
+        {navItems.map((item:any) => (
           <ListItem key={item[0]} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }} onClick={() => scrollToSection(item[1])}>
               <ListItemText primary={item[0]} />
@@ -93,7 +93,7 @@ function Navigation({parentToChild, modeChange}: any) {
             <DarkModeIcon onClick={() => modeChange()}/>
           )}
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
+            {navItems.map((item:any) => (
               <Button key={item[0]} onClick={() => scrollToSection(item[1])} sx={{ color: '#fff' }}>
                 {item[0]}
               </Button>

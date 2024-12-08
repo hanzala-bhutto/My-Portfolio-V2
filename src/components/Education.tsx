@@ -20,7 +20,7 @@ function Education() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faGraduationCap} />}
           >
-            <h3 className="vertical-timeline-element-title">Distributed Systems Engineering</h3>
+            <h3 className="vertical-timeline-element-title">MS In Distributed Systems Engineering</h3>
             <h4 className="vertical-timeline-element-subtitle">Technische Universität Dresden</h4>
             <p>
               Transaction Systems, Distributed Systems, System Design, Confidential Computing 
@@ -32,7 +32,7 @@ function Education() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faGraduationCap} />}
           >
-            <h3 className="vertical-timeline-element-title">Software Engineering</h3>
+            <h3 className="vertical-timeline-element-title">BS in Software Engineering</h3>
             <h4 className="vertical-timeline-element-subtitle">FAST NUCES</h4>
             <p>
               Object Oriented Programming, Database Systems, Web Engineering, Applied DevOps 
