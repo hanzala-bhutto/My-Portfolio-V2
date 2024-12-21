@@ -1,6 +1,6 @@
 import React from "react";
 import '../assets/styles/Main.scss';
-import profile from '../assets/images/profile_photo/profile_photo_V2.png';
+import profile from '../assets/images/profile_photo/profile_photo_V3.png';
 import {FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Main() {
