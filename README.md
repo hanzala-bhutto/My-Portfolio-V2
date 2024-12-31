@@ -86,3 +86,8 @@ npm run deploy
 4. **Access Your Deployed App**
 
    After successfully deploying, you can access your app at `https://yourusername.github.io/your-repo-name`.
+
+5. **Things to Work On**
+   
+      Search Feature on Projects Section
+   
