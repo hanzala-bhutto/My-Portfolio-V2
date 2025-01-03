@@ -2,6 +2,8 @@ import React from "react";
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { projects } from "../data";
 import '../assets/styles/Project.scss';
+import { Link } from 'react-router-dom';
+
 
 function Project() {
     return (
@@ -29,6 +31,9 @@ function Project() {
                         </div>
                     </div>
                 ))}
+            </div>
+            <div className="load-more-container">
+                <Link to="/My-Portfolio-V2/projects" className="load-more-button">Load More</Link>
             </div>
         </div>
     );
