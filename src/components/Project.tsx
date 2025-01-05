@@ -10,7 +10,7 @@ function Project() {
         <div className="projects-container" id="projects">
             <h1>Personal Projects</h1>
             <div className="projects-grid">
-                {projects.map((project, index) => (
+                {projects.slice(0, 4).map((project, index) => (
                     <div className="project-card" key={index}>
                         <img src={project.image} className="zoom" alt="thumbnail" width="100%" height="65%"/>
                         <div className="project-content">
