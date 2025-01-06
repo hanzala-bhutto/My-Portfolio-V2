@@ -47,4 +47,12 @@ export const projects = [
         github: "https://github.com/hanzala-bhutto/PMD-React-Native-Travel-Food-App",
         website: "",
     },
+    {
+        title: "Space Tourism Website",
+        description: "Designed and developed a responsive Space Tourism website using Next.js and TailwindCSS. This project provides an engaging UI and seamless user experience for exploring space tourism opportunities.",
+        image: mock06,
+        skills: ["Next.js", "TailwindCSS", "Web Development", "Responsive Design"],
+        github: "https://github.com/hanzala-bhutto/Next-TailwindCSS-Space-Tourism-Website",
+        website: "https://next-tailwind-css-space-tourism-website.vercel.app/home",
+    },    
 ];
