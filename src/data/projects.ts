@@ -55,4 +55,12 @@ export const projects = [
         github: "https://github.com/hanzala-bhutto/Next-TailwindCSS-Space-Tourism-Website",
         website: "https://next-tailwind-css-space-tourism-website.vercel.app/home",
     },    
+    {
+        title: "Face Recognition Brain",
+        description: "Built a full-stack web application that detects faces in images using the Clarifai API. Developed with React for the front end and Express.js for the back end, providing users with a responsive and interactive experience.",
+        image: mock10,
+        skills: ["React", "Express.js", "Node.js", "Clarifai API", "Full-Stack Development"],
+        github: "https://github.com/hanzala-bhutto/React-Express-FaceRecognitionBrain",
+        website: "",
+    },
 ];
