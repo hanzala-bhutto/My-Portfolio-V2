@@ -6,6 +6,8 @@
 
 ```bash
 
+
+
 ```
 
 This simple portfolio template is designed to showcase your past projects, career history, skill sets, and more.
@@ -28,22 +30,24 @@ This simple portfolio template is designed to showcase your past projects, caree
 
 ```bash
 node -v
+
 ```
 
 2. In the project directory, install dependencies:
 
 ```bash
 npm install
+
 ```
 
 3. Start the development server:
 
 ```bash
 npm start
+
 ```
 
 4. Open [http://localhost:3000](http://localhost:3000) to view the app in the browser.
-
 5. Customize the template by navigating to the `/src/components` directory. Modify texts, pictures, and other information as needed.
 
 The page will reload if you make edits, and you will see any lint errors in the console.
@@ -71,6 +75,7 @@ Edit the following properties in your `package.json` file:
         ...
     }
 }
+
 ```
 
 Replace `yourusername` with your GitHub username and `your-repo-name` with the name of your GitHub repository.
@@ -81,6 +86,7 @@ Run the following command to deploy your app:
 
 ```bash
 npm run deploy
+
 ```
 
 4. **Access Your Deployed App**
@@ -88,6 +94,6 @@ npm run deploy
    After successfully deploying, you can access your app at `https://yourusername.github.io/your-repo-name`.
 
 5. **Things to Work On**
-   
-      Search Feature on Projects Section
-   
+
+   All Projects Page -> Completed
+   Search Feature on Projects Section -> Completed
