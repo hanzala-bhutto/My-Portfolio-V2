@@ -16,7 +16,7 @@ function Main() {
             <a href="https://github.com/hanzala-bhutto" target="_blank" rel="noreferrer"><FaGithub/></a>
             <a href="https://www.linkedin.com/in/hanzala-bhutto-a10936234/" target="_blank" rel="noreferrer"><FaLinkedin/></a>
             
-            <a href={require('../assets/resume/Hanzala_Software_Engineer_CV_2.pdf')} download="Hanzala_CV_Software_Engineer">
+            <a href={require('../assets/resume/Hanzala_Software_Engineer_CV.pdf')} download="Hanzala_CV_Software_Engineer">
               <FaFilePdf/> CV
             </a>
 
