@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/My-Portfolio-V2/static/css/main.630de6fe.css",
-    "main.js": "/My-Portfolio-V2/static/js/main.f4da121f.js",
+    "main.js": "/My-Portfolio-V2/static/js/main.ed10e978.js",
     "static/js/453.b05d8aa5.chunk.js": "/My-Portfolio-V2/static/js/453.b05d8aa5.chunk.js",
     "static/media/mock10.png": "/My-Portfolio-V2/static/media/mock10.2d05b02ba569a430a255.png",
     "static/media/bg-light.png": "/My-Portfolio-V2/static/media/bg-light.bac0efb485244a522981.png",
@@ -16,11 +16,11 @@
     "static/media/Hanzala_Software_Engineer_CV.pdf": "/My-Portfolio-V2/static/media/Hanzala_Software_Engineer_CV.fdc052d7d5451e0a04ce.pdf",
     "index.html": "/My-Portfolio-V2/index.html",
     "main.630de6fe.css.map": "/My-Portfolio-V2/static/css/main.630de6fe.css.map",
-    "main.f4da121f.js.map": "/My-Portfolio-V2/static/js/main.f4da121f.js.map",
+    "main.ed10e978.js.map": "/My-Portfolio-V2/static/js/main.ed10e978.js.map",
     "453.b05d8aa5.chunk.js.map": "/My-Portfolio-V2/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.630de6fe.css",
-    "static/js/main.f4da121f.js"
+    "static/js/main.ed10e978.js"
   ]
 }
