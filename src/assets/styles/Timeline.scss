@@ -23,6 +23,16 @@
     color: rgb(39, 40, 34);
 }
 
+.vertical-timeline-element ul {
+    color: rgb(39, 40, 34);
+    margin: 0.5rem 0 0;
+    padding-left: 1.25rem;
+}
+
+.vertical-timeline-element ul ul {
+    margin-top: 0.25rem;
+}
+
 .vertical-timeline-element .vertical-timeline-element-date {
     color: white;
 }

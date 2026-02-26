@@ -5,6 +5,32 @@ import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss'
+import { career, type CareerHighlight } from "../data/careers";
+
+function Highlights({ highlights }: { highlights: CareerHighlight[] }) {
+  return (
+    <ul className="timeline-highlights">
+      {highlights.map((h, idx) => {
+        if (typeof h === "string") {
+          return <li key={idx}>{h}</li>;
+        }
+
+        return (
+          <li key={idx}>
+            {h.text}
+            {h.subpoints?.length ? (
+              <ul>
+                {h.subpoints.map((sp, spIdx) => (
+                  <li key={spIdx}>{sp}</li>
+                ))}
+              </ul>
+            ) : null}
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
 
 function Career() {
   return (
@@ -12,70 +38,29 @@ function Career() {
       <div className="items-container">
         <h1>Career History</h1>
         <VerticalTimeline>
-        <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
-            contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="March 2025 - Present"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Werkstudent: Software Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Infineon Technologies</h4>
-            <p>
-              Outsystems
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
-            contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="July 2024 - Nov 2024"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Software Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">GoodCore</h4>
-            <p>
-              Full-stack Web Development, Database Development, GenAI/LLM, Caching, DevOps, Python
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="June 2024 - July 2024"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Junior Software Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Trafix</h4>
-            <p>
-              C# / C++ Desktop Development, Object Oriented Programming, Multi-Threading, Asio.io 
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="June 2023 - Sep 2023"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Software Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">One Technology Services</h4>
-            <p>
-              Front-end Development, User Experience, Typescript, Angular 
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="Sept 2022 - June 2023"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">University Teaching Assistant</h3>
-            <h4 className="vertical-timeline-element-subtitle">FAST NUCES</h4>
-            <p>
-              Assistant for Programming Fundamentals & Object Oriented Programming Courses.
-            </p>
-          </VerticalTimelineElement>
+          {career.map((item, idx) => (
+            <VerticalTimelineElement
+              key={`${item.company}-${item.date}-${idx}`}
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+              contentArrowStyle={{ borderRight: '7px solid  white' }}
+              date={item.date}
+              iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+              icon={<FontAwesomeIcon icon={faBriefcase} />}
+            >
+              <h3 className="vertical-timeline-element-title">{item.title}</h3>
+              <h4 className="vertical-timeline-element-subtitle">{item.company}</h4>
+
+              {(item.location || item.workMode || item.employmentType) ? (
+                <p>
+                  {[item.location, item.workMode, item.employmentType].filter(Boolean).join(" · ")}
+                </p>
+              ) : null}
+
+              {item.summary ? <p>{item.summary}</p> : null}
+              {item.highlights?.length ? <Highlights highlights={item.highlights} /> : null}
+            </VerticalTimelineElement>
+          ))}
         </VerticalTimeline>
       </div>
     </div>
