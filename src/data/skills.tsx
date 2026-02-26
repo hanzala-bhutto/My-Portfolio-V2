@@ -1,5 +1,30 @@
 import { FaReact, FaDocker, FaPython, FaJs, FaJava, FaHtml5, FaCss3, FaBootstrap, FaAngular, FaNode, FaFlask, FaGit, FaGithub, FaBitbucket, FaAws, FaToolbox, FaStream } from 'react-icons/fa';
-import { SiCplusplus, SiExpress, SiFastapi, SiJest, SiKubernetes, SiLangchain, SiMongodb, SiMysql, SiNestjs, SiNextdotjs, SiOpenai, SiOracle, SiPostgresql, SiRootsbedrock, SiStreamlit, SiTailwindcss } from "react-icons/si";
+import {
+    SiAntdesign,
+    SiAnthropic,
+    SiCplusplus,
+    SiDotnet,
+    SiExpress,
+    SiFastapi,
+    SiGitlab,
+    SiJest,
+    SiKubernetes,
+    SiLangchain,
+    SiMongodb,
+    SiMysql,
+    SiNeo4J,
+    SiNestjs,
+    SiNextdotjs,
+    SiOpenai,
+    SiOracle,
+    SiPostgresql,
+    SiPostman,
+    SiRedis,
+    SiRootsbedrock,
+    SiStreamlit,
+    SiTailwindcss,
+    SiTypescript,
+} from "react-icons/si";
 import { PiFileCSharp, PiFileSql } from "react-icons/pi";
 import { BsDatabaseFillDash } from "react-icons/bs";
 import { VscAzure } from "react-icons/vsc";
@@ -11,7 +36,7 @@ export const skills = [
         description: "",
         labels: [
             { name: "JavaScript", icon: <FaJs /> },
-            { name: "TypeScript", icon: <FaReact /> },
+            { name: "TypeScript", icon: <SiTypescript /> },
             { name: "Java", icon: <FaJava /> },
             { name: "C++", icon: <SiCplusplus /> },
             { name: "C#", icon: <PiFileCSharp /> },
@@ -25,6 +50,7 @@ export const skills = [
             { name: "HTML5", icon: <FaHtml5 /> },
             { name: "CSS3", icon: <FaCss3 /> },
             { name: "Bootstrap", icon: <FaBootstrap /> },
+            { name: "Ant Design", icon: <SiAntdesign /> },
             { name: "TailwindCSS", icon: <SiTailwindcss /> },
             { name: "React.js", icon: <FaReact /> },
             { name: "Next.js", icon: <SiNextdotjs /> },
@@ -39,7 +65,9 @@ export const skills = [
             { name: "Express", icon: <SiExpress /> },
             { name: "Nest", icon: <SiNestjs /> },
             { name: "Flask", icon: <FaFlask /> },
-            { name: "FastAPI", icon: <SiFastapi /> }
+            { name: "FastAPI", icon: <SiFastapi /> },
+            { name: ".NET", icon: <SiDotnet /> },
+            { name: "OutSystems", icon: <FaToolbox /> }
         ]
     },
     {
@@ -51,7 +79,10 @@ export const skills = [
             { name: "PostgreSQL", icon: <SiPostgresql /> },
             { name: "MySQL", icon: <SiMysql /> },
             { name: "Oracle", icon: <SiOracle /> },
-            { name: "MongoDB", icon: <SiMongodb /> }
+            { name: "MongoDB", icon: <SiMongodb /> },
+            { name: "Redis", icon: <SiRedis /> },
+            { name: "Neo4j", icon: <SiNeo4J /> },
+            { name: "Qdrant", icon: <BsDatabaseFillDash /> }
         ]
     },
     {
@@ -61,11 +92,14 @@ export const skills = [
             { name: "Git", icon: <FaGit /> },
             { name: "GitHub", icon: <FaGithub /> },
             { name: "Bitbucket", icon: <FaBitbucket /> },
+            { name: "GitLab CI/CD", icon: <SiGitlab /> },
             { name: "Docker", icon: <FaDocker /> },
             { name: "Kubernetes", icon: <SiKubernetes /> },
-            { name: "Zookeeper", icon: <SiKubernetes /> },
+            { name: "OpenShift", icon: <SiKubernetes /> },
             { name: "AWS", icon: <FaAws /> },
             { name: "Azure", icon: <VscAzure /> },
+            { name: "Azure DevOps", icon: <VscAzure /> },
+            { name: "Postman", icon: <SiPostman /> },
             { name: "Jest", icon: <SiJest /> }
         ]
     },
@@ -74,6 +108,7 @@ export const skills = [
         description: "",
         labels: [
             { name: "OpenAI", icon: <SiOpenai /> },
+            { name: "Anthropic (Claude)", icon: <SiAnthropic /> },
             { name: "LangChain", icon: <SiLangchain /> },
             { name: "AWS Bedrock", icon: <SiRootsbedrock /> },
             { name: "Tool Calling", icon: <FaToolbox /> },
