@@ -15,10 +15,6 @@ function Main() {
           <div className="social_icons">
             <a href="https://github.com/hanzala-bhutto" target="_blank" rel="noreferrer"><FaGithub/></a>
             <a href="https://www.linkedin.com/in/hanzala-bhutto-a10936234/" target="_blank" rel="noreferrer"><FaLinkedin/></a>
-            
-            <a href={require('../assets/resume/Hanzala_Software_Development_CV.pdf')} download="Hanzala_CV_Software_Engineer">
-              <FaFilePdf/> CV
-            </a>
 
           </div>
           <h1 id="intro_name">Hanzala Bhutto</h1>
