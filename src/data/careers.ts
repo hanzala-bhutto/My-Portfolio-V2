@@ -19,7 +19,7 @@ export type CareerEntry = {
 export const career: CareerEntry[] = [
 	{
 		date: "Mar 2025 - Present",
-		title: "Werkstudent: Software Engineer",
+		title: "Software Engineer",
 		company: "Infineon Technologies",
 		location: "Dresden, Saxony, Germany",
 		workMode: "Hybrid",
@@ -46,7 +46,7 @@ export const career: CareerEntry[] = [
 		],
 	},
 	{
-		date: "Jul 2024 - Nov 2024",
+		date: "Mar 2024 - Feb 2025",
 		title: "Software Engineer",
 		company: "GoodCore",
 		highlights: [
@@ -56,16 +56,6 @@ export const career: CareerEntry[] = [
 			"Reduced API latency via SQL stored procedures/functions supporting tool-calling workflows.",
 			"Added caching (e.g., Redis / Flask-Caching) to improve response time and stability.",
 			"Dockerized the AI service for consistent deployments; actively reviewed PRs and delivered internal/cross-team/client demos.",
-		],
-	},
-	{
-		date: "Jun 2024 - Jul 2024",
-		title: "Junior Software Engineer",
-		company: "Trafix",
-		highlights: [
-			"Implemented a multi-client server application in core C++ using Asio (low-level API design).",
-			"Managed a dedicated session per client; supported concurrent messaging and file transfers (up to GBs).",
-			"Handled packet ingestion on both client/server via queued pipelines; used mutex locks to keep queue operations consistent.",
 		],
 	},
 	{
