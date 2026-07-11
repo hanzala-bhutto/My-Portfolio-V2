@@ -144,6 +144,53 @@ p, a, h1, h2, h3, h4, h5, label, button {
   .flex-chips .chip-title {
     color: #0d1116;
   }
+
+  .career-tabs {
+    border-left-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .career-tab {
+    .career-tab-company {
+      color: #0d1116;
+    }
+
+    .career-tab-date {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:hover {
+      border-left-color: rgba(80, 0, 202, 0.5);
+    }
+
+    &.active .career-tab-company {
+      color: #5000ca;
+    }
+  }
+
+  .career-detail {
+    .career-detail-title {
+      color: #0d1116;
+    }
+
+    .career-detail-meta {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    p, .career-highlights {
+      color: #0d1116;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .career-tabs {
+      border-left-color: transparent;
+      border-bottom-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .career-tab:hover {
+      border-bottom-color: rgba(80, 0, 202, 0.5);
+    }
+  }
 }
 
 @media screen {
