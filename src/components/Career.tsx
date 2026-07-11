@@ -1,10 +1,10 @@
 import React, { useRef, useState } from "react";
-import '../assets/styles/Career.scss'
+import '../assets/styles/TabSwitcher.scss'
 import { career, type CareerHighlight } from "../data/careers";
 
 function Highlights({ highlights }: { highlights: CareerHighlight[] }) {
   return (
-    <ul className="career-highlights">
+    <ul className="tab-highlights">
       {highlights.map((h, idx) => {
         if (typeof h === "string") {
           return <li key={idx}>{h}</li>;
@@ -69,9 +69,9 @@ function Career() {
     <div id="career">
       <div className="items-container">
         <h1>Career History</h1>
-        <div className="career-switcher">
+        <div className="tab-switcher">
           <div
-            className="career-tabs"
+            className="tab-list"
             role="tablist"
             aria-orientation="vertical"
             aria-label="Career history"
@@ -88,28 +88,28 @@ function Career() {
                   aria-selected={selected}
                   aria-controls="career-panel"
                   tabIndex={selected ? 0 : -1}
-                  className={`career-tab${selected ? " active" : ""}`}
+                  className={`tab-list-item${selected ? " active" : ""}`}
                   onClick={() => setActiveIndex(idx)}
                 >
-                  <span className="career-tab-company">{item.company}</span>
-                  <span className="career-tab-date">{item.date}</span>
+                  <span className="tab-list-item-title">{item.company}</span>
+                  <span className="tab-list-item-subtitle">{item.date}</span>
                 </button>
               );
             })}
           </div>
 
           <div
-            className="career-detail"
+            className="tab-detail"
             role="tabpanel"
             id="career-panel"
             aria-labelledby={`career-tab-${activeIndex}`}
             tabIndex={0}
           >
-            <h3 className="career-detail-title">{activeItem.title}</h3>
-            <h4 className="career-detail-subtitle">{activeItem.company}</h4>
+            <h3 className="tab-detail-title">{activeItem.title}</h3>
+            <h4 className="tab-detail-subtitle">{activeItem.company}</h4>
 
             {(activeItem.location || activeItem.workMode || activeItem.employmentType) ? (
-              <p className="career-detail-meta">
+              <p className="tab-detail-meta">
                 {[activeItem.location, activeItem.workMode, activeItem.employmentType].filter(Boolean).join(" · ")}
               </p>
             ) : null}

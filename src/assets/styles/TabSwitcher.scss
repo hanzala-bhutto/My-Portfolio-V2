@@ -1,18 +1,18 @@
-.career-switcher {
+.tab-switcher {
     display: flex;
     gap: 2rem;
     margin-top: 1.5rem;
     align-items: flex-start;
 }
 
-.career-tabs {
+.tab-list {
     display: flex;
     flex-direction: column;
     flex: 0 0 260px;
     border-left: 2px solid rgba(255, 255, 255, 0.15);
 }
 
-.career-tab {
+.tab-list-item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -26,13 +26,13 @@
     cursor: pointer;
     font-family: "Lato", sans-serif;
 
-    .career-tab-company {
+    .tab-list-item-title {
         font-size: 1rem;
         font-weight: 600;
         color: white;
     }
 
-    .career-tab-date {
+    .tab-list-item-subtitle {
         font-size: 0.8rem;
         color: rgba(255, 255, 255, 0.6);
     }
@@ -44,7 +44,7 @@
     &.active {
         border-left-color: #5000ca;
 
-        .career-tab-company {
+        .tab-list-item-title {
             color: #b088ff;
         }
     }
@@ -55,7 +55,7 @@
     }
 }
 
-.career-detail {
+.tab-detail {
     flex: 1;
     min-height: 220px;
     padding: 0.5rem 0;
@@ -64,27 +64,27 @@
         outline: none;
     }
 
-    .career-detail-title {
+    .tab-detail-title {
         margin: 0;
         color: white;
     }
 
-    .career-detail-subtitle {
+    .tab-detail-subtitle {
         margin: 0.25rem 0 0.75rem;
         color: #b088ff;
     }
 
-    .career-detail-meta {
+    .tab-detail-meta {
         color: rgba(255, 255, 255, 0.7);
         font-size: 0.9rem;
     }
 
-    p, .career-highlights {
+    p, .tab-highlights {
         color: white;
     }
 }
 
-.career-highlights {
+.tab-highlights {
     margin: 0.5rem 0 0;
     padding-left: 1.25rem;
 
@@ -95,12 +95,12 @@
 
 @media screen {
     @media (max-width: 768px) {
-        .career-switcher {
+        .tab-switcher {
             flex-direction: column;
             gap: 1rem;
         }
 
-        .career-tabs {
+        .tab-list {
             flex-direction: row;
             flex: 1 1 auto;
             width: 100%;
@@ -109,7 +109,7 @@
             border-bottom: 2px solid rgba(255, 255, 255, 0.15);
         }
 
-        .career-tab {
+        .tab-list-item {
             flex: 0 0 auto;
             border-left: none;
             border-bottom: 2px solid transparent;
