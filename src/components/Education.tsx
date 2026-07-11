@@ -82,7 +82,15 @@ function Education() {
           >
             <h3 className="tab-detail-title">{activeItem.title}</h3>
             <h4 className="tab-detail-subtitle">{activeItem.institution}</h4>
+            {activeItem.grade ? <p className="tab-detail-meta">Grade: {activeItem.grade}</p> : null}
             {activeItem.summary ? <p>{activeItem.summary}</p> : null}
+            {activeItem.highlights?.length ? (
+              <ul className="tab-highlights">
+                {activeItem.highlights.map((h, idx) => (
+                  <li key={idx}>{h}</li>
+                ))}
+              </ul>
+            ) : null}
           </div>
         </div>
       </div>
