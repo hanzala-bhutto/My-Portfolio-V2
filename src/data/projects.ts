@@ -5,8 +5,17 @@ import multi_disease from '../assets/images/project_photos/multi_disease.png';
 import chat_to_your_database from '../assets/images/project_photos/chat_to_your_database.png';
 import proctowise from '../assets/images/project_photos/proctowise.png';
 import travfood from '../assets/images/project_photos/travfood.png';
+import applysync from '../assets/images/project_photos/applysync.png';
 
 export const projects = [
+    {
+        title: "ApplySync",
+        description: "Built an email-driven job application tracker that ingests Gmail confirmation emails via a LangGraph pipeline (relevance scrutiny, extraction, matching) powered by NVIDIA NIM, surfacing a Kanban dashboard with company research and response-rate analytics.",
+        image: applysync,
+        skills: ["Python", "FastAPI", "LangChain", "LangGraph", "React", "TypeScript", "Tailwind CSS", "SQLModel"],
+        github: "https://github.com/hanzala-bhutto/ApplySync",
+        website: ""
+    },
     {
         title: "Multi Client Server Application",
         description: "Designed an asynchronous server-client framework using Boost.Asio in C++ to enable scalable, non-blocking communication between a server and multiple clients with modular code.",
